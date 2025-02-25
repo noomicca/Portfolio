@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Portfolio - Carpeta Anual 2</title>
+    </head>
+    <body>
+        <video autoplay muted loop id="bgVideo">
+            <source src="assets/bg vid v2.mp4" type="video/mp4" />
+        </video>
+        <div id="content">
+            <div id="cameraView">
+                <div></div>
+            </div>
+            <header>
+                <h1>Portfolio:</h1>
+                <h2>Carpeta Anual 2</h2>
+            </header>
+            <div id="floatingWindows">
+                <div id="infoPopup">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <nav id="phoneNav">
+                    <a href="#" id="phoneStartBtn" title="Inicio">
+                        <img src="assets/icons/start.svg" alt="" />
+                        <p>Inicio</p>
+                    </a>
+                    <a href="#" id="phoneProjectsBtn" title="Proyectos">
+                        <img src="assets/icons/folders.svg" alt="" />
+                        <p>Proyectos</p>
+                    </a>
+                    <a href="#" id="phoneAboutBtn" title="Sobre mi">
+                        <img src="assets/icons/flushed.svg" alt="" />
+                        <p>Sobre Mi</p>
+                    </a>
+                </nav>
+            </div>
+
+            <nav id="desktopNav">
+                <a href="#" id="deskStartBtn" title="Inicio">
+                    <p>Inicio</p>
+                </a>
+                <a href="#" id="deskProjectsBtn" title="Proyectos">
+                    <p>Proyectos</p>
+                </a>
+                <a href="#" id="deskAboutBtn" title="Sobre mi">
+                    <p>Sobre Mi</p>
+                </a>
+            </nav>
+
+            <div id="view">
+                <div class="projectGallery" id="projectGallery"></div>
+            </div>
+
+            <div id="phoneMenu">
+                <button
+                    type="button"
+                    class="galleryBtn"
+                    id="galleryBtn"
+                    title="galería"
+                ></button>
+                <button
+                    type="button"
+                    class="navBtn"
+                    id="navBtn"
+                    title="menú"
+                ></button>
+                <button
+                    type="button"
+                    class="infoBtn"
+                    id="infoBtn"
+                    title="Información"
+                ></button>
+            </div>
+            <div id="desktopInfo">
+                <h3></h3>
+                <p></p>
+                <button
+                    type="button"
+                    class="cameraGalleryBtn"
+                    id="cameraGalleryBtn"
+                    title="galería"
+                ></button>
+            </div>
+            <footer>
+                <strong>Micaela Villamil</strong>
+                <p>Universidad ORT Uruguay. Febrero, 2025.</p>
+            </footer>
+        </div>
+    </body>
+
+    <!-- SCRIPTS -->
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
+
+    <script src="database.js"></script>
+    <script src="code.js"></script>
+</html>
